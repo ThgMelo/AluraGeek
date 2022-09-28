@@ -89,7 +89,7 @@ table {
   border-radius: 5px;
   outline: 0;
   box-sizing: border-box;
-  height: 1.625rem;
+  height: 2rem;
 }
 .pesquisa__mobile--buscar {
   background-color: #FFFFFF;
@@ -99,12 +99,12 @@ table {
   font-size: 0.75rem;
   font-weight: 600;
   box-sizing: border-box;
-  height: 1.625rem;
+  height: 2rem;
 }
 
 .btn__pesquisa {
   background-color: #2A7AE4;
-  border: none;
+  border: 1px solid #2A7AE4;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
