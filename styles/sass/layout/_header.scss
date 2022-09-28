@@ -1,0 +1,49 @@
+.l-header{
+    height: 4.5rem;
+    border-top: 5px solid $azul;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+
+    &__login{
+        width: 133px;
+    }
+
+    &__pesquisa{
+        align-self: flex-start;
+    }
+}
+
+.pesquisa__mobile{
+    height: 48px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $azul;
+    margin-top: -48px;
+    transition: all .3s ease-in-out;
+
+    &--input{
+        padding: .3rem;
+        border: none;
+        border-radius: 5px;
+        outline: 0;
+        box-sizing: border-box;
+        height: 1.625rem;
+    }
+
+    &--buscar{
+        background-color: $branco;
+        border: none;
+        border-radius: 5px;
+        color: $azul;
+        font-size: .75rem;
+        font-weight: 600;
+        box-sizing: border-box;
+        height: 1.625rem;
+    }
+}

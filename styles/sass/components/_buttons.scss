@@ -1,0 +1,26 @@
+.btn__pesquisa{
+    background-color: $azul;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn__login{
+    text-decoration: none;
+    color: $azul;
+    border: 1px solid $azul;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: .875rem;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: $azul;
+        color: $branco;
+    }
+}
