@@ -1,4 +1,7 @@
+@import '../abstracts/mixins';
 @import '../abstracts/variaveis';
+@import '../state/state';
 @import './reset';
 @import '../layout/header';
 @import '../components/buttons';
+@import '../layout/main';

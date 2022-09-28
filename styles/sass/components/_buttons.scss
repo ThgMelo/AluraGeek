@@ -25,3 +25,20 @@
         color: $branco;
     }
 }
+
+.btn__principal{
+    text-decoration: none;
+    text-align: center;
+    background-color: $azul;
+    color: $branco;
+    font-weight: 600;
+    font-size: .875rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: $branco;
+        color: $azul;
+    }
+}
