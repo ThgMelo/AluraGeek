@@ -177,6 +177,16 @@ table {
   background-color: transparent;
   margin-left: 0.5rem;
 }
+.pesquisa__desktop--input::-moz-placeholder {
+  color: #A2A2A2;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.pesquisa__desktop--input:-ms-input-placeholder {
+  color: #A2A2A2;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
 .pesquisa__desktop--input::placeholder {
   color: #A2A2A2;
   font-size: 0.875rem;
@@ -511,6 +521,4 @@ table {
 .l-footer__principal--form--btn {
   border: none;
   width: 150px;
-}
-
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */
