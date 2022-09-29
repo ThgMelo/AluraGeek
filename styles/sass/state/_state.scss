@@ -3,3 +3,12 @@
     opacity: 0;
     position: absolute;
 }
+
+.is-desktop-only{
+    display: none !important;
+    @include for-desktop-only{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: .5rem !important;
+    }
+}

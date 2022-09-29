@@ -4,6 +4,17 @@
   position: absolute;
 }
 
+.is-desktop-only {
+  display: none !important;
+}
+@media (min-width: 1400px) {
+  .is-desktop-only {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,6 +139,7 @@ table {
   outline: 0;
   box-sizing: border-box;
   height: 2rem;
+  width: 60vw;
 }
 .pesquisa__mobile--buscar {
   background-color: #FFFFFF;
@@ -279,6 +291,118 @@ table {
 }
 .l-main__promocional--link {
   width: 120px;
+}
+
+.l-card {
+  margin-bottom: 2rem;
+}
+.l-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 328px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-card__header {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 704px;
+  }
+}
+@media (min-width: 1400px) {
+  .l-card__header {
+    padding-top: 4rem;
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+    max-width: 1136px;
+  }
+}
+.l-card__titulo {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #464646;
+}
+.l-card__link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #2A7AE4;
+  text-decoration: none;
+}
+.l-card__link:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-card__link {
+    font-size: 1rem;
+  }
+}
+.l-card__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 328px;
+}
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-card__lista {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 704px;
+  }
+}
+@media (min-width: 1400px) {
+  .l-card__lista {
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1136px;
+  }
+}
+.l-card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.l-card__item--img {
+  width: 100%;
+}
+.l-card__item--descricao {
+  color: #464646;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.l-card__item--valor {
+  color: #464646;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.l-card__item--link {
+  color: #2A7AE4;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.l-card__item--link:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-card__item--link {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .l-card__item--link {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
