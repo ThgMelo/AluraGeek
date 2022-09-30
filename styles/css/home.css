@@ -421,6 +421,7 @@ table {
 }
 @media (min-width: 1400px) {
   .l-footer__principal {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "logo navi formu";
     padding: 4rem;
   }
@@ -432,6 +433,12 @@ table {
   margin-right: auto;
   padding: 1rem;
 }
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-footer__principal--logo {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
 .l-footer__principal--nav {
   display: flex;
   flex-direction: column;
@@ -442,6 +449,12 @@ table {
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-footer__principal--nav {
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1400px) {
   .l-footer__principal--nav {
     gap: 1.5rem;
     align-items: flex-start;
@@ -479,7 +492,7 @@ table {
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 0, 0.2);
-  width: 90%;
+  width: 100%;
 }
 .l-footer__principal--form--nome--label {
   font-size: 0.75rem;
@@ -500,7 +513,7 @@ table {
   padding: 0.3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  width: 91%;
+  width: 100%;
   resize: none;
 }
 @media (min-width: 768px) and (max-width: 1399.87px) {
@@ -511,6 +524,18 @@ table {
 .l-footer__principal--form--btn {
   border: none;
   width: 150px;
+}
+.l-footer__creditos {
+  height: 102px;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.l-footer__creditos--titulo {
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 
 /*# sourceMappingURL=home.css.map */
