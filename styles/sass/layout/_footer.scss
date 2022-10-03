@@ -1,7 +1,13 @@
 .l-footer{
-    &__principal{
+    &__1{
         background-color: $azul-claro;
+        width: 100vw;
+    }
+
+    &__principal{
         padding-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
 
         display: grid;
         grid-template-areas: 
@@ -17,6 +23,7 @@
             "navi formu";
 
             padding: 2rem;
+            max-width: 704px;
         }
 
         @include for-desktop-only{
@@ -24,6 +31,7 @@
             grid-template-areas: 
             "logo navi formu";
             padding: 4rem;
+            max-width: 1136px;
         }
 
         &--logo{
@@ -36,6 +44,11 @@
             @include for-tablet-only{
                 margin-left: 0px;
                 padding-left: 0px;
+            }
+
+            @include for-desktop-only{
+                padding: 0;
+                margin-left: 0;
             }
         }
 

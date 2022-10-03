@@ -1,0 +1,25 @@
+.l-todos-produtos{
+    flex-grow: 1;
+    width: 100vw;
+    background-color: $cinza-fundo;
+
+    &__header{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        max-width: 296px;
+        margin: 0 auto 0 auto;
+        width: 100%;
+
+        @include for-tablet-only{
+            flex-direction: row;
+            max-width: 704px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--btn{
+            width: 150px;
+        }
+    }
+}
