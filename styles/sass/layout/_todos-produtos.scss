@@ -2,14 +2,18 @@
     flex-grow: 1;
     width: 100vw;
     background-color: $cinza-fundo;
+    padding-bottom: 1rem;
 
     &__header{
         display: flex;
         gap: 1rem;
         flex-direction: column;
         max-width: 296px;
-        margin: 0 auto 0 auto;
-        width: 100%;
+        box-sizing: border-box;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
 
         @include for-tablet-only{
             flex-direction: row;
@@ -18,8 +22,84 @@
             align-items: center;
         }
 
+        @include for-desktop-only{
+            flex-direction: row;
+            max-width: 1136px;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 4rem;
+        }
+
+        &--titulo{
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: $preto;
+        }
+
         &--btn{
             width: 150px;
+        }
+    }
+
+    &__lista{
+        max-width: 296px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        @include for-tablet-only{
+            max-width: 704px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include for-desktop-only{
+            max-width: 1136px;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &--item{
+            position: relative;
+
+            &--imagem{
+                width: 100%;
+            }
+
+            &--botoes{
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                &-botao{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+            }
+
+            &--titulo{
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: $preto;
+                margin-top: .5rem;
+            }
+
+            &--valor{
+                font-weight: 700;
+                color: $preto;
+                margin-top: .5rem;
+            }
+
+            &--subtitulo{
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: $preto;
+                margin-top: .5rem;
+            }
         }
     }
 }

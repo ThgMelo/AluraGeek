@@ -236,28 +236,97 @@ table {
   flex-grow: 1;
   width: 100vw;
   background-color: #f5f5f5;
+  padding-bottom: 1rem;
 }
 .l-todos-produtos__header {
   display: flex;
   gap: 1rem;
   flex-direction: column;
   max-width: 296px;
-  margin: 0 auto 0 auto;
-  width: 100%;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) and (max-width: 1399.87px) {
   .l-todos-produtos__header {
     flex-direction: row;
     max-width: 704px;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1400px) {
+  .l-todos-produtos__header {
+    flex-direction: row;
+    max-width: 1136px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
   }
 }
 .l-todos-produtos__header--titulo {
-  margin-top: 2rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #464646;
 }
 .l-todos-produtos__header--btn {
   width: 150px;
-  margin-bottom: 1rem;
+}
+.l-todos-produtos__lista {
+  max-width: 296px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1399.87px) {
+  .l-todos-produtos__lista {
+    max-width: 704px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .l-todos-produtos__lista {
+    max-width: 1136px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.l-todos-produtos__lista--item {
+  position: relative;
+}
+.l-todos-produtos__lista--item--imagem {
+  width: 100%;
+}
+.l-todos-produtos__lista--item--botoes {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.l-todos-produtos__lista--item--botoes-botao {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.l-todos-produtos__lista--item--titulo {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #464646;
+  margin-top: 0.5rem;
+}
+.l-todos-produtos__lista--item--valor {
+  font-weight: 700;
+  color: #464646;
+  margin-top: 0.5rem;
+}
+.l-todos-produtos__lista--item--subtitulo {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #464646;
+  margin-top: 0.5rem;
 }
 
 .l-footer__1 {
@@ -414,6 +483,10 @@ body {
 
 main {
   flex-grow: 1;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=produtos-home.css.map */

@@ -15,4 +15,8 @@ body{
 
 main{
     flex-grow: 1;
+    background-color: $cinza-fundo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
