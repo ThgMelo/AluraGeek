@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AluraGeek | Login</title>
+        <title>AluraGeek | Produto</title>
         <link rel="shortcut icon" href="../images/header/Favicon.svg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +34,58 @@
         </header>
 
         <main>
+            <section class="l-produto">
+                <img class="l-produto__imagem" src="../images/produtos/Produto1-big.jpg" alt="Produto 1">
+                <div class="l-produto__container">
+                    <h2 class="l-produto__container--titulo">Produto 1</h2>
+                    <p class="l-produto__container--valor">R$ 60,00</p>
+                    <p class="l-produto__container--descricao">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+                </div>
+            </section>
+
+            <section class="l-card">
+                <header class="l-card__header">
+                    <h2 class="l-card__titulo">Produtos Similares</h2>
+                </header>
+                <ul class="l-card__lista">
+                    <li class="l-card__item">
+                        <img src="../images/produtos/Produto1.jpg" alt="Star Wars 1" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 1</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                    <li class="l-card__item">
+                        <img src="../images/produtos/Produto2.jpg" alt="Star Wars 2" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 2</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                    <li class="l-card__item">
+                        <img src="../images/produtos/Produto3.jpg" alt="Star Wars 3" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 3</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                    <li class="l-card__item">
+                        <img src="../images/produtos/Produto4.jpg" alt="Star Wars 4" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 4</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                    <li class="l-card__item is-desktop-only">
+                        <img src="../images/produtos/Produto5.jpg" alt="Star Wars 5" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 5</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                    <li class="l-card__item is-desktop-only">
+                        <img src="../images/produtos/Produto6.jpg" alt="Star Wars 6" class="l-card__item--img">
+                        <h3 class="l-card__item--descricao">Produto 6</h3>
+                        <h4 class="l-card__item--valor">R$ 60,00</h4>
+                        <a href="#" class="l-card__item--link">Ver produto</a>
+                    </li>
+                </ul>
+            </section>
         </main>
 
         <footer class="l-footer">
@@ -54,9 +106,9 @@
                             <label class="l-footer__principal--form--nome--label" for="nome">Nome</label>
                             <input class="l-footer__principal--form--nome--input" type="text" id="nome" name="name">
                         </div>
-                        <div>
+                        <div class="l-footer__principal--form--mensagem">
                             <label for="mensagem" class="is-invisible">Escreva sua mensagem</label>
-                            <textarea id="mensagem" cols="30" rows="10" class="l-footer__principal--form--mensagem" placeholder="Escreva sua mensagem"></textarea>
+                            <textarea id="mensagem" class="l-footer__principal--form--mensagem--area" placeholder="Escreva sua mensagem"></textarea>
                         </div>
                         <div>
                             <input class="btn__principal l-footer__principal--form--btn" type="submit" value="Enviar mensagem">

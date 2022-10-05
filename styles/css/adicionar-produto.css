@@ -432,6 +432,7 @@ table {
   border-radius: 4px;
   box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 0, 0.2);
   width: 100%;
+  box-sizing: border-box;
 }
 .l-footer__principal--form--nome--label {
   font-size: 0.75rem;
@@ -447,13 +448,27 @@ table {
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 0, 0.2);
-  border: none;
-  outline: 0;
   padding: 0.3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   width: 100%;
+  height: 82px;
+  box-sizing: border-box;
+}
+.l-footer__principal--form--mensagem--area {
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100;
   resize: none;
+}
+.l-footer__principal--form--mensagem--area::placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a2a2a2;
 }
 @media (min-width: 768px) and (max-width: 1399.87px) {
   .l-footer__principal--form--mensagem {
