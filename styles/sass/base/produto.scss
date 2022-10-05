@@ -1,0 +1,21 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variaveis';
+@import '../state/state';
+@import './reset';
+@import '../layout/header';
+@import '../components/buttons';
+@import '../layout/footer';
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    background-color: $cinza-fundo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

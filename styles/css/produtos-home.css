@@ -316,6 +316,7 @@ table {
   font-weight: 500;
   color: #464646;
   margin-top: 0.5rem;
+  text-decoration: none;
 }
 .l-todos-produtos__lista--item--valor {
   font-weight: 700;
